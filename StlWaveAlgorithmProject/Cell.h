@@ -1,6 +1,11 @@
 #pragma once
 #include <iostream>
 #include <iomanip>
+#include <vector>
+
+using namespace std;
+
+const char WallChar = 178;
 
 enum CellType
 {
@@ -23,4 +28,7 @@ public:
 	int& Value();
 	friend std::ostream& operator<<(std::ostream& out, const Cell& cell);
 };
+
+//typedef vector<Cell> cvector;
+
 
